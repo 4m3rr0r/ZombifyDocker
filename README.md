@@ -7,7 +7,7 @@ Python, Node, Go, PHP, Ruby, MySQL, Postgres, Redis, and more.
 
 ## How It Works
 
-- **Check Docker Group**: The script checks if the current user is part of the `docker` group. If not, it advises the user to add themselves.
+- **Check Docker Group**: The script checks if the current user is part of the `docker` group.
 - **Check Local Docker Images**: It checks for available Docker images on the system. If no images are found, it attempts to pull the `ubuntu` image.
 - **Privilege Escalation Attempt**: For each Docker image in the predefined list, the script checks if it can execute `chroot` inside the container with the host's filesystem, potentially escalating privileges.
 - **Execution**: If successful, it launches a root shell with access to the host filesystem.
