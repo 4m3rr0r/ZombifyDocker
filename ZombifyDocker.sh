@@ -42,9 +42,7 @@ IMAGES=("python" "bash" "node" "sh" "golang" "openjdk" "php" "ruby" "dotnet/sdk"
 
 # Check if the current user is in the docker group
 if ! groups | grep -q "\bdocker\b"; then
-    echo "[!] You are not in the docker group. Add yourself using:"
-    echo "    sudo usermod -aG docker $(whoami)"
-    echo "    newgrp docker"
+    echo "[!] You are not in the docker group."
     exit 1
 fi
 
