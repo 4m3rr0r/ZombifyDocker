@@ -35,4 +35,4 @@ Python, Node, Go, PHP, Ruby, MySQL, Postgres, Redis, and more.
     ./ZombifyDocker.sh
    ```
 
-   
+   <img src="./Images/2025-02-22_11-14.png" alt="alt text" />
